@@ -14,6 +14,10 @@
 		438C145B1CD7B296005516A5 /* Landmark.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 438C14591CD7B296005516A5 /* Landmark.xcdatamodeld */; };
 		438C145D1CD7B296005516A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 438C145C1CD7B296005516A5 /* Assets.xcassets */; };
 		438C14601CD7B296005516A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 438C145E1CD7B296005516A5 /* LaunchScreen.storyboard */; };
+		438C14681CD7B2C4005516A5 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 438C14671CD7B2C4005516A5 /* MapKit.framework */; };
+		438C146A1CD7B2CA005516A5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 438C14691CD7B2CA005516A5 /* CoreLocation.framework */; };
+		438C146F1CD7B40C005516A5 /* Landmarks+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 438C146C1CD7B40C005516A5 /* Landmarks+CoreDataProperties.m */; };
+		438C14701CD7B40C005516A5 /* Landmarks.m in Sources */ = {isa = PBXBuildFile; fileRef = 438C146E1CD7B40C005516A5 /* Landmarks.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,12 @@
 		438C145C1CD7B296005516A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		438C145F1CD7B296005516A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		438C14611CD7B296005516A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		438C14671CD7B2C4005516A5 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		438C14691CD7B2CA005516A5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		438C146B1CD7B40C005516A5 /* Landmarks+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Landmarks+CoreDataProperties.h"; sourceTree = "<group>"; };
+		438C146C1CD7B40C005516A5 /* Landmarks+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Landmarks+CoreDataProperties.m"; sourceTree = "<group>"; };
+		438C146D1CD7B40C005516A5 /* Landmarks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Landmarks.h; sourceTree = "<group>"; };
+		438C146E1CD7B40C005516A5 /* Landmarks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Landmarks.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +45,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				438C146A1CD7B2CA005516A5 /* CoreLocation.framework in Frameworks */,
+				438C14681CD7B2C4005516A5 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +56,8 @@
 		438C14411CD7B296005516A5 = {
 			isa = PBXGroup;
 			children = (
+				438C14691CD7B2CA005516A5 /* CoreLocation.framework */,
+				438C14671CD7B2C4005516A5 /* MapKit.framework */,
 				438C144C1CD7B296005516A5 /* Landmark */,
 				438C144B1CD7B296005516A5 /* Products */,
 			);
@@ -68,7 +82,7 @@
 				438C145C1CD7B296005516A5 /* Assets.xcassets */,
 				438C145E1CD7B296005516A5 /* LaunchScreen.storyboard */,
 				438C14611CD7B296005516A5 /* Info.plist */,
-				438C14591CD7B296005516A5 /* Landmark.xcdatamodeld */,
+				438C14711CD7B419005516A5 /* data */,
 				438C144D1CD7B296005516A5 /* Supporting Files */,
 			);
 			path = Landmark;
@@ -80,6 +94,18 @@
 				438C144E1CD7B296005516A5 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		438C14711CD7B419005516A5 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				438C146B1CD7B40C005516A5 /* Landmarks+CoreDataProperties.h */,
+				438C146C1CD7B40C005516A5 /* Landmarks+CoreDataProperties.m */,
+				438C146D1CD7B40C005516A5 /* Landmarks.h */,
+				438C146E1CD7B40C005516A5 /* Landmarks.m */,
+				438C14591CD7B296005516A5 /* Landmark.xcdatamodeld */,
+			);
+			name = data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,7 +180,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				438C14551CD7B296005516A5 /* ViewController.m in Sources */,
+				438C146F1CD7B40C005516A5 /* Landmarks+CoreDataProperties.m in Sources */,
 				438C14521CD7B296005516A5 /* AppDelegate.m in Sources */,
+				438C14701CD7B40C005516A5 /* Landmarks.m in Sources */,
 				438C144F1CD7B296005516A5 /* main.m in Sources */,
 				438C145B1CD7B296005516A5 /* Landmark.xcdatamodeld in Sources */,
 			);
