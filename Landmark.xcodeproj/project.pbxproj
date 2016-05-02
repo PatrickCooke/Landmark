@@ -18,6 +18,7 @@
 		438C146A1CD7B2CA005516A5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 438C14691CD7B2CA005516A5 /* CoreLocation.framework */; };
 		438C14761CD7BE6E005516A5 /* Landmarks+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 438C14731CD7BE6E005516A5 /* Landmarks+CoreDataProperties.m */; };
 		438C14771CD7BE6E005516A5 /* Landmarks.m in Sources */ = {isa = PBXBuildFile; fileRef = 438C14751CD7BE6E005516A5 /* Landmarks.m */; };
+		438C147A1CD7E948005516A5 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 438C14791CD7E948005516A5 /* DetailsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,8 @@
 		438C14731CD7BE6E005516A5 /* Landmarks+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Landmarks+CoreDataProperties.m"; sourceTree = "<group>"; };
 		438C14741CD7BE6E005516A5 /* Landmarks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Landmarks.h; sourceTree = "<group>"; };
 		438C14751CD7BE6E005516A5 /* Landmarks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Landmarks.m; sourceTree = "<group>"; };
+		438C14781CD7E948005516A5 /* DetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
+		438C14791CD7E948005516A5 /* DetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +82,8 @@
 				438C14531CD7B296005516A5 /* ViewController.h */,
 				438C14541CD7B296005516A5 /* ViewController.m */,
 				438C14561CD7B296005516A5 /* Main.storyboard */,
+				438C14781CD7E948005516A5 /* DetailsViewController.h */,
+				438C14791CD7E948005516A5 /* DetailsViewController.m */,
 				438C145C1CD7B296005516A5 /* Assets.xcassets */,
 				438C145E1CD7B296005516A5 /* LaunchScreen.storyboard */,
 				438C14611CD7B296005516A5 /* Info.plist */,
@@ -183,6 +188,7 @@
 				438C14761CD7BE6E005516A5 /* Landmarks+CoreDataProperties.m in Sources */,
 				438C14521CD7B296005516A5 /* AppDelegate.m in Sources */,
 				438C14771CD7BE6E005516A5 /* Landmarks.m in Sources */,
+				438C147A1CD7E948005516A5 /* DetailsViewController.m in Sources */,
 				438C144F1CD7B296005516A5 /* main.m in Sources */,
 				438C145B1CD7B296005516A5 /* Landmark.xcdatamodeld in Sources */,
 			);

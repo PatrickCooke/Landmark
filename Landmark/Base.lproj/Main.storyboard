@@ -42,6 +42,69 @@
             </objects>
             <point key="canvasLocation" x="1536" y="329"/>
         </scene>
+        <!--Details View Controller-->
+        <scene sceneID="K6N-5M-ScO">
+            <objects>
+                <viewController id="BGk-zz-hf1" customClass="DetailsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Kmy-9l-k5P"/>
+                        <viewControllerLayoutGuide type="bottom" id="kB7-ek-TWp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zMF-mn-D7H">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Landmark Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UDc-tS-fPt">
+                                <rect key="frame" x="20" y="28" width="560" height="55"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Landmark Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pYg-Xv-wqh">
+                                <rect key="frame" x="268" y="91" width="177" height="26"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wEQ-5W-Uy4">
+                                <rect key="frame" x="20" y="91" width="240" height="240"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="landmark phone" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iHH-wH-3Ud">
+                                <rect key="frame" x="268" y="125" width="312" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Landmark URL" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sTI-H6-gLC">
+                                <rect key="frame" x="268" y="163" width="312" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Landmark Description" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jX3-sz-Tlj">
+                                <rect key="frame" x="268" y="201" width="312" height="130"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="landmarkAddressLabel" destination="pYg-Xv-wqh" id="IIT-bE-F7J"/>
+                        <outlet property="landmarkDescriptTextView" destination="jX3-sz-Tlj" id="Qgw-fw-qSV"/>
+                        <outlet property="landmarkNameLabel" destination="UDc-tS-fPt" id="nN2-JR-eoh"/>
+                        <outlet property="landmarkPhoneTextView" destination="iHH-wH-3Ud" id="QEU-q4-gsw"/>
+                        <outlet property="landmarkPictureImageView" destination="wEQ-5W-Uy4" id="2E9-ro-C7U"/>
+                        <outlet property="landmarkURLTextView" destination="sTI-H6-gLC" id="vas-dH-xFT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EId-FW-yuf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2266" y="329"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="mGy-UV-dPw">
             <objects>

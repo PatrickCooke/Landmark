@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "Landmarks.h"
 #import "AppDelegate.h"
+#import "DetailsViewController.h"
 
 
 @interface ViewController ()
@@ -221,6 +222,13 @@
 //
 //    }
 
+}
+
+#pragma mark - Segue
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    DetailsViewController *destController = [segue destinationViewController];
+    destController.currentlandmark = [Landmarks in _landmarkArray];
 }
 
 #pragma mark - Life Cycle Methods
