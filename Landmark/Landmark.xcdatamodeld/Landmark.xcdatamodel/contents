@@ -4,8 +4,8 @@
         <attribute name="landmarkAddress" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="landmarkDescript" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="landmarkImageName" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="landmarkLat" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
-        <attribute name="landmarkLon" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="landmarkLat" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="landmarkLon" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="landmarkName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="landmarkPhone" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="landmarkURL" optional="YES" attributeType="String" syncable="YES"/>

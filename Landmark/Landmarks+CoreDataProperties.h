@@ -17,8 +17,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nullable, nonatomic, retain) NSString *landmarkName;
 @property (nullable, nonatomic, retain) NSString *landmarkAddress;
-@property (nullable, nonatomic, retain) NSDecimalNumber *landmarkLat;
-@property (nullable, nonatomic, retain) NSDecimalNumber *landmarkLon;
+@property (nullable, nonatomic, retain) NSString *landmarkLat;
+@property (nullable, nonatomic, retain) NSString *landmarkLon;
 @property (nullable, nonatomic, retain) NSString *landmarkImageName;
 @property (nullable, nonatomic, retain) NSString *landmarkDescript;
 @property (nullable, nonatomic, retain) NSString *landmarkURL;
