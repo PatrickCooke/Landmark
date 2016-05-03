@@ -19,6 +19,7 @@
 		438C14761CD7BE6E005516A5 /* Landmarks+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 438C14731CD7BE6E005516A5 /* Landmarks+CoreDataProperties.m */; };
 		438C14771CD7BE6E005516A5 /* Landmarks.m in Sources */ = {isa = PBXBuildFile; fileRef = 438C14751CD7BE6E005516A5 /* Landmarks.m */; };
 		438C147A1CD7E948005516A5 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 438C14791CD7E948005516A5 /* DetailsViewController.m */; };
+		438C147D1CD9038A005516A5 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 438C147C1CD9038A005516A5 /* TableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,8 @@
 		438C14751CD7BE6E005516A5 /* Landmarks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Landmarks.m; sourceTree = "<group>"; };
 		438C14781CD7E948005516A5 /* DetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
 		438C14791CD7E948005516A5 /* DetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
+		438C147B1CD9038A005516A5 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		438C147C1CD9038A005516A5 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +87,8 @@
 				438C14561CD7B296005516A5 /* Main.storyboard */,
 				438C14781CD7E948005516A5 /* DetailsViewController.h */,
 				438C14791CD7E948005516A5 /* DetailsViewController.m */,
+				438C147B1CD9038A005516A5 /* TableViewController.h */,
+				438C147C1CD9038A005516A5 /* TableViewController.m */,
 				438C145C1CD7B296005516A5 /* Assets.xcassets */,
 				438C145E1CD7B296005516A5 /* LaunchScreen.storyboard */,
 				438C14611CD7B296005516A5 /* Info.plist */,
@@ -191,6 +196,7 @@
 				438C147A1CD7E948005516A5 /* DetailsViewController.m in Sources */,
 				438C144F1CD7B296005516A5 /* main.m in Sources */,
 				438C145B1CD7B296005516A5 /* Landmark.xcdatamodeld in Sources */,
+				438C147D1CD9038A005516A5 /* TableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

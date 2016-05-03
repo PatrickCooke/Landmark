@@ -11,4 +11,6 @@
 
 @interface DetailsViewController : UIViewController
 
+@property (nonatomic, strong) Landmarks *currentLandmark;
+
 @end

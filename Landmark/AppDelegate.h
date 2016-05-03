@@ -16,10 +16,12 @@
 @property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 @property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
 @property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
+@property (nonatomic, strong) NSArray *landmarkArray;
 
 - (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;
-
+- (NSArray*)fetchLandmarks;
+- (void)tempAddRecords;
 
 @end
 

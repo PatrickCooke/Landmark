@@ -9,6 +9,7 @@
 #import "DetailsViewController.h"
 #import "AppDelegate.h"
 
+
 @interface DetailsViewController ()
 
 @property (nonatomic,weak) IBOutlet UILabel *landmarkNameLabel;
@@ -22,14 +23,25 @@
 
 @implementation DetailsViewController
 
+#pragma mark - Interactivity Method
+
+-(IBAction)whateverButtonPressed:(id)sender {
+    NSLog(@"whatever");
+    UIActivityViewController *activityVC = [[UIActivityViewController alloc] initWithActivityItems:@[[NSString stringWithFormat:@"I just saw %@, and I loved it!",_currentLandmark.landmarkName]] applicationActivities:nil];
+    [self.navigationController presentViewController:activityVC animated:true completion:nil];
+}
+
+#pragma mark - Life Cycle Methods
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    //_landmarkNameLabel.text = currentlandmark.landmarkName
-    //_landmarkAddressLabel.text = currentlandmark.landmarkAddress
-    //_landmarkPhoneTextView.text = currentlandmark.landmarkPhone
-    //_landmarkURLTextView.text = currentlandmark.landmarkURL
-    //_landmarkDescriptTextView.text = currentlandmark.landmarkDescript
-    //_landmarkPictureImageView.image = 
+    _landmarkNameLabel.text = _currentLandmark.landmarkName;
+    _landmarkAddressLabel.text = _currentLandmark.landmarkAddress;
+    _landmarkPhoneTextView.text = _currentLandmark.landmarkPhone;
+    _landmarkURLTextView.text = _currentLandmark.landmarkURL;
+    _landmarkDescriptTextView.text = _currentLandmark.landmarkDescript;
+    _landmarkPictureImageView.image = [UIImage imageNamed:_currentLandmark.landmarkImageName];
+    NSLog(@"I just loaded %@",_currentLandmark.landmarkName);
 }
 
 - (void)didReceiveMemoryWarning {
