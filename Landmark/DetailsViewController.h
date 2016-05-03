@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "Landmarks.h"
+#import <MapKit/MapKit.h>
 
-@interface DetailsViewController : UIViewController
+@interface DetailsViewController : UIViewController <MKMapViewDelegate>
 
 @property (nonatomic, strong) Landmarks *currentLandmark;
 

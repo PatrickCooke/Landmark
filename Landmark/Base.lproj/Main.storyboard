@@ -124,25 +124,78 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Landmark Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UDc-tS-fPt">
-                                <rect key="frame" x="20" y="64" width="560" height="55"/>
+                                <rect key="frame" x="178" y="64" width="402" height="35"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="55" id="Shp-cS-Pr2"/>
+                                    <constraint firstAttribute="height" constant="35" id="Shp-cS-Pr2"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Landmark Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pYg-Xv-wqh">
-                                <rect key="frame" x="178" y="127" width="402" height="26"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Landmark URL" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sTI-H6-gLC">
+                                <rect key="frame" x="178" y="179" width="402" height="43"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="26" id="01P-0n-DUz"/>
+                                    <constraint firstAttribute="height" constant="43" id="E6I-Z1-EA9"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Landmark Description" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jX3-sz-Tlj">
+                                <rect key="frame" x="20" y="223" width="560" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="OJR-kS-9aa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r9g-4k-sKd">
+                                <rect key="frame" x="20" y="291" width="560" height="30"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="YoS-ZF-Wq4"/>
+                                </constraints>
+                                <state key="normal" title="Share this Location with Friends"/>
+                                <connections>
+                                    <action selector="whateverButtonPressed:" destination="BGk-zz-hf1" eventType="touchUpInside" id="rqx-VJ-Ekc"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="landmark phone" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="iHH-wH-3Ud">
+                                <rect key="frame" x="178" y="141" width="402" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="eDR-pk-ahf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zUR-Xz-foS">
+                                <rect key="frame" x="169" y="351" width="411" height="192"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dyf-Gd-aau">
+                                <rect key="frame" x="169" y="323" width="411" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Bzm-1w-JzA"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="Pmx-wg-IzZ"/>
+                                </constraints>
+                                <state key="normal" title="Get Directions!"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Pmx-wg-IzZ"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="getDirections:" destination="BGk-zz-hf1" eventType="touchUpInside" id="fkG-aE-Rxs"/>
+                                </connections>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wEQ-5W-Uy4">
-                                <rect key="frame" x="20" y="127" width="150" height="150"/>
+                                <rect key="frame" x="20" y="72" width="150" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="5oW-mQ-NJF"/>
                                     <constraint firstAttribute="width" secondItem="wEQ-5W-Uy4" secondAttribute="height" multiplier="1:1" id="Kv2-b1-TjD"/>
@@ -154,83 +207,98 @@
                                     </mask>
                                 </variation>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Landmark URL" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sTI-H6-gLC">
-                                <rect key="frame" x="178" y="199" width="402" height="78"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="landmark address" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ahe-le-05k">
+                                <rect key="frame" x="178" y="107" width="402" height="33"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="78" id="E6I-Z1-EA9"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Landmark Description" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jX3-sz-Tlj">
-                                <rect key="frame" x="20" y="285" width="560" height="130"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="130" id="OJR-kS-9aa"/>
+                                    <constraint firstAttribute="height" constant="33" id="eP6-Q4-XAl"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r9g-4k-sKd">
-                                <rect key="frame" x="20" y="423" width="560" height="30"/>
-                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NN6-TZ-Q5K">
+                                <rect key="frame" x="20" y="323" width="150" height="220"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="YoS-ZF-Wq4"/>
+                                    <constraint firstAttribute="width" constant="150" id="CDY-RC-BUw"/>
                                 </constraints>
-                                <state key="normal" title="Share this Location with Friends"/>
                                 <connections>
-                                    <action selector="whateverButtonPressed:" destination="BGk-zz-hf1" eventType="touchUpInside" id="rqx-VJ-Ekc"/>
+                                    <outlet property="delegate" destination="BGk-zz-hf1" id="Kkl-oe-YSp"/>
                                 </connections>
-                            </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="landmark phone" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="iHH-wH-3Ud">
-                                <rect key="frame" x="178" y="161" width="402" height="30"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="eDR-pk-ahf"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
-                            </textView>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="r9g-4k-sKd" firstAttribute="top" secondItem="jX3-sz-Tlj" secondAttribute="bottom" constant="8" id="08f-Xt-2wR"/>
                             <constraint firstItem="sTI-H6-gLC" firstAttribute="leading" secondItem="wEQ-5W-Uy4" secondAttribute="trailing" constant="8" id="0ne-YX-S07"/>
+                            <constraint firstItem="NN6-TZ-Q5K" firstAttribute="leading" secondItem="wEQ-5W-Uy4" secondAttribute="trailing" constant="-150" id="0xK-kG-XEm"/>
                             <constraint firstItem="r9g-4k-sKd" firstAttribute="leading" secondItem="jX3-sz-Tlj" secondAttribute="trailing" constant="-560" id="2Mj-Iz-LTl"/>
                             <constraint firstAttribute="leadingMargin" secondItem="wEQ-5W-Uy4" secondAttribute="leading" id="3KL-um-FTH"/>
                             <constraint firstItem="UDc-tS-fPt" firstAttribute="top" secondItem="Kmy-9l-k5P" secondAttribute="bottom" id="74b-zN-L3C"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zUR-Xz-foS" secondAttribute="trailing" id="7R7-7e-oPt"/>
+                            <constraint firstItem="Dyf-Gd-aau" firstAttribute="top" secondItem="r9g-4k-sKd" secondAttribute="bottom" constant="2" id="89n-QM-9KP"/>
                             <constraint firstAttribute="trailingMargin" secondItem="r9g-4k-sKd" secondAttribute="trailing" id="8v3-Kz-udT"/>
+                            <constraint firstItem="jX3-sz-Tlj" firstAttribute="top" secondItem="wEQ-5W-Uy4" secondAttribute="bottom" constant="1" id="AlE-Qw-TAM"/>
+                            <constraint firstItem="jX3-sz-Tlj" firstAttribute="top" secondItem="wEQ-5W-Uy4" secondAttribute="bottom" constant="8" id="BRM-4z-nIp"/>
+                            <constraint firstItem="jX3-sz-Tlj" firstAttribute="top" secondItem="sTI-H6-gLC" secondAttribute="bottom" constant="20" id="Bmr-xq-mU4"/>
                             <constraint firstItem="jX3-sz-Tlj" firstAttribute="top" secondItem="wEQ-5W-Uy4" secondAttribute="bottom" constant="8" id="Bqp-ux-hKY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zUR-Xz-foS" secondAttribute="trailing" id="Ctg-90-ERn"/>
+                            <constraint firstItem="kB7-ek-TWp" firstAttribute="top" secondItem="NN6-TZ-Q5K" secondAttribute="bottom" constant="8" id="DHA-gn-b2i"/>
+                            <constraint firstItem="Ahe-le-05k" firstAttribute="top" secondItem="UDc-tS-fPt" secondAttribute="bottom" constant="8" id="FWa-7h-pIj"/>
                             <constraint firstAttribute="leadingMargin" secondItem="UDc-tS-fPt" secondAttribute="leading" id="HbN-qs-f67"/>
+                            <constraint firstItem="iHH-wH-3Ud" firstAttribute="top" secondItem="Ahe-le-05k" secondAttribute="bottom" constant="1" id="M5K-yg-F3o"/>
                             <constraint firstItem="iHH-wH-3Ud" firstAttribute="leading" secondItem="wEQ-5W-Uy4" secondAttribute="trailing" constant="8" id="Ou6-5d-DkM"/>
+                            <constraint firstItem="iHH-wH-3Ud" firstAttribute="top" secondItem="Ahe-le-05k" secondAttribute="bottom" constant="1" id="PWk-Y0-yvL"/>
+                            <constraint firstItem="zUR-Xz-foS" firstAttribute="top" secondItem="Dyf-Gd-aau" secondAttribute="bottom" constant="-2" id="SKB-1t-Uvo"/>
                             <constraint firstAttribute="leadingMargin" secondItem="r9g-4k-sKd" secondAttribute="leading" id="SNU-42-8Xf"/>
+                            <constraint firstItem="UDc-tS-fPt" firstAttribute="top" secondItem="Kmy-9l-k5P" secondAttribute="bottom" id="Svy-g2-mTB"/>
                             <constraint firstAttribute="trailingMargin" secondItem="jX3-sz-Tlj" secondAttribute="trailing" id="TcQ-Qe-GDB"/>
+                            <constraint firstItem="Dyf-Gd-aau" firstAttribute="leading" secondItem="NN6-TZ-Q5K" secondAttribute="trailing" constant="-1" id="UDr-Mc-CmV"/>
+                            <constraint firstItem="r9g-4k-sKd" firstAttribute="leading" secondItem="NN6-TZ-Q5K" secondAttribute="trailing" constant="-211" id="VTs-ZV-8Or"/>
                             <constraint firstAttribute="trailingMargin" secondItem="UDc-tS-fPt" secondAttribute="trailing" id="VZ1-8h-KWO"/>
                             <constraint firstAttribute="trailingMargin" secondItem="sTI-H6-gLC" secondAttribute="trailing" id="XFT-2r-6r3"/>
+                            <constraint firstItem="wEQ-5W-Uy4" firstAttribute="top" secondItem="Kmy-9l-k5P" secondAttribute="bottom" constant="8" id="XFl-Ff-1P6"/>
+                            <constraint firstItem="jX3-sz-Tlj" firstAttribute="top" secondItem="sTI-H6-gLC" secondAttribute="bottom" constant="-47" id="a8Q-LL-Yam"/>
                             <constraint firstItem="wEQ-5W-Uy4" firstAttribute="top" secondItem="UDc-tS-fPt" secondAttribute="bottom" constant="8" id="abb-7s-ZWJ"/>
+                            <constraint firstItem="zUR-Xz-foS" firstAttribute="top" secondItem="r9g-4k-sKd" secondAttribute="bottom" constant="8" id="adD-qI-6r0"/>
                             <constraint firstAttribute="trailingMargin" secondItem="iHH-wH-3Ud" secondAttribute="trailing" id="bm2-wF-brW"/>
+                            <constraint firstItem="UDc-tS-fPt" firstAttribute="leading" secondItem="wEQ-5W-Uy4" secondAttribute="trailing" constant="8" id="dE8-na-gaw"/>
                             <constraint firstItem="sTI-H6-gLC" firstAttribute="top" secondItem="iHH-wH-3Ud" secondAttribute="bottom" constant="8" id="fQ7-t5-DNr"/>
-                            <constraint firstItem="pYg-Xv-wqh" firstAttribute="leading" secondItem="wEQ-5W-Uy4" secondAttribute="trailing" constant="8" id="iTg-31-1SC"/>
-                            <constraint firstItem="pYg-Xv-wqh" firstAttribute="top" secondItem="UDc-tS-fPt" secondAttribute="bottom" constant="8" id="s9w-XW-WVz"/>
+                            <constraint firstItem="Ahe-le-05k" firstAttribute="leading" secondItem="UDc-tS-fPt" secondAttribute="trailing" constant="-402" id="gkV-B6-pDz"/>
+                            <constraint firstItem="Ahe-le-05k" firstAttribute="leading" secondItem="wEQ-5W-Uy4" secondAttribute="trailing" constant="8" id="iFw-xr-rrf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ahe-le-05k" secondAttribute="trailing" id="iwO-vp-THF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Dyf-Gd-aau" secondAttribute="trailing" id="kfh-00-VK3"/>
+                            <constraint firstItem="NN6-TZ-Q5K" firstAttribute="top" secondItem="r9g-4k-sKd" secondAttribute="bottom" constant="2" id="nt5-uT-fhA"/>
+                            <constraint firstItem="kB7-ek-TWp" firstAttribute="top" secondItem="zUR-Xz-foS" secondAttribute="bottom" constant="8" id="q1Z-gR-VoA"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="NN6-TZ-Q5K" secondAttribute="leading" id="s8i-Rk-AoG"/>
+                            <constraint firstItem="zUR-Xz-foS" firstAttribute="leading" secondItem="NN6-TZ-Q5K" secondAttribute="trailing" constant="-1" id="tB0-ag-J4v"/>
                             <constraint firstAttribute="trailingMargin" secondItem="r9g-4k-sKd" secondAttribute="trailing" id="tZX-N4-eET"/>
                             <constraint firstAttribute="leadingMargin" secondItem="r9g-4k-sKd" secondAttribute="leading" id="wCv-ZI-fEt"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="pYg-Xv-wqh" secondAttribute="trailing" id="xOa-zr-l6i"/>
                             <constraint firstAttribute="leadingMargin" secondItem="jX3-sz-Tlj" secondAttribute="leading" id="yq2-pV-x9k"/>
-                            <constraint firstItem="iHH-wH-3Ud" firstAttribute="top" secondItem="pYg-Xv-wqh" secondAttribute="bottom" constant="8" id="zSW-j3-iHt"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="abb-7s-ZWJ"/>
+                                <exclude reference="74b-zN-L3C"/>
+                                <exclude reference="HbN-qs-f67"/>
+                                <exclude reference="gkV-B6-pDz"/>
+                                <exclude reference="BRM-4z-nIp"/>
+                                <exclude reference="Bmr-xq-mU4"/>
+                                <exclude reference="Bqp-ux-hKY"/>
+                                <exclude reference="a8Q-LL-Yam"/>
+                                <exclude reference="PWk-Y0-yvL"/>
                                 <exclude reference="2Mj-Iz-LTl"/>
                                 <exclude reference="SNU-42-8Xf"/>
+                                <exclude reference="VTs-ZV-8Or"/>
                                 <exclude reference="tZX-N4-eET"/>
+                                <exclude reference="0xK-kG-XEm"/>
+                                <exclude reference="Ctg-90-ERn"/>
+                                <exclude reference="adD-qI-6r0"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="landmarkAddressLabel" destination="pYg-Xv-wqh" id="IIT-bE-F7J"/>
+                        <outlet property="directionsMapView" destination="NN6-TZ-Q5K" id="LfU-6g-QUM"/>
+                        <outlet property="directionsTextView" destination="zUR-Xz-foS" id="JD1-q5-YHU"/>
                         <outlet property="landmarkDescriptTextView" destination="jX3-sz-Tlj" id="Qgw-fw-qSV"/>
                         <outlet property="landmarkNameLabel" destination="UDc-tS-fPt" id="2rm-Xp-QZS"/>
                         <outlet property="landmarkPhoneTextView" destination="iHH-wH-3Ud" id="QEU-q4-gsw"/>
